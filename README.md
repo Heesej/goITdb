@@ -11,7 +11,8 @@ Welcome to the SQLAlchemy Workshop Examples repository! This repository contains
 ### Installation
 ```bash
 git clone https://github.com/your-username/sqlalchemy-workshop-examples.git
-cd sqlalchemy-workshop-examples
+virtualenv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
