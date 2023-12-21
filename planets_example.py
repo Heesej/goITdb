@@ -16,3 +16,16 @@ planets_collectin = sample_guides_db.get_collection("planets")
 print("Documents: ")
 for doc in planets_collectin.find():
     print(doc)
+
+
+document = {
+    'name': 'Pluto',
+    'orderFromSun': 9,
+    'hasRings': False,
+    'mainAtmosphere': ['H2', 'He', 'CH4'], 'surfaceTemperatureC': {
+        'min': None,
+        'max': None,
+        'mean': -197.2
+    }
+}
+planets_collectin.insert_one(document)
