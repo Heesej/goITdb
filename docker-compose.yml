@@ -46,7 +46,7 @@ services:
       - common_network
     ports:
       - "6379:6379"
-    valumes:
+    volumes:
       - redisdata:/data
 
 volumes:
