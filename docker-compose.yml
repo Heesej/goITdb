@@ -39,9 +39,20 @@ services:
     volumes:
       - mongodbdata:/data/db
 
+  redis:
+    image: redis
+    container_name: redis
+    networks:
+      - common_network
+    ports:
+      - "6379:6379"
+    valumes:
+      - redisdata:/data
+
 volumes:
   pgdata:
   mongodbdata:
+  redisdata:
 
 networks:
   common_network:
